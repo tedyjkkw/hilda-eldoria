@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+header {
+    background: url('images/fundo-cabecalho.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #ff6347;
+}
+
+.personagem, .capitulo, .historia, .mundo, .arte, .post {
+    margin-bottom: 30px;
+}
+
+.personagem img, .arte img, .mapa {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.personagem h3, .capitulo h3, .historia h3, .mundo h3, .arte h3, .post h3 {
+    margin-top: 15px;
+    color: #ffa07a;
+}
+
+.capitulo, .historia, .mundo, .arte, .post {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.capitulo p, .historia p, .mundo p, .arte p, .post p {
+    margin-top: 10px;
+}
+
+.arte .mapa {
+    width: 100%;
+    height: auto;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6347;
+    text-decoration: none;
+    border: 1px solid #ff6347;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.post a:hover {
+    background: #ff6347;
+    color: #1a1a1a;
+}
+
+/* Rodapé */
+footer {
+    background: #0d0d0d;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
